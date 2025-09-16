@@ -1,0 +1,64 @@
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom, #77b5f9, #d4f0f9);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .glass-card {
+      width: 90%;
+      max-width: 380px;
+      padding: 25px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #fff;
+    }
+    .glass-card h3 {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+    .form-control {
+      border-radius: 12px;
+      padding: 14px;
+      font-size: 1rem;
+      border: none;
+    }
+    .form-control:focus {
+      box-shadow: 0 0 8px rgba(78, 115, 223, 0.7);
+    }
+    .btn-custom {
+      background: #4e73df;
+      color: white;
+      font-weight: bold;
+      border-radius: 30px;
+      padding: 12px;
+      font-size: 1.1rem;
+      width: 100%;
+      transition: 0.3s ease;
+    }
+    .btn-custom:hover {
+      background: #3752a6;
+    }
+    .text-link {
+      color: #fff;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+    @media (max-width: 576px) {
+      body {
+        padding: 20px;
+      }
+      .glass-card {
+        padding: 20px;
+      }
+      .glass-card h3 {
+        font-size: 1.4rem;
+      }
+    }

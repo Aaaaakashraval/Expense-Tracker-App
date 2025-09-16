@@ -1,0 +1,32 @@
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: linear-gradient(to bottom, #77b5f9, #d4f0f9);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .logo img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .welcome-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    .btn-custom {
+      margin-top: 20px;
+      background: #4e73df;
+      color: white;
+      border-radius: 25px;
+      padding: 10px 25px;
+    }
+    .btn-custom:hover {
+      background: #3752a6;
+    }

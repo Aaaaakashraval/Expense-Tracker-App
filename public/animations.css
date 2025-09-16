@@ -1,0 +1,132 @@
+/* animations.css - Subtle animations for Expense Tracker */
+
+/* Global fade-in animation for page content */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Pulse animation for interactive elements */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Button hover animation */
+@keyframes buttonHover {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-1px); }
+  100% { transform: translateY(0); }
+}
+
+/* Slide in from right for modals */
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Slide in from bottom for alerts */
+@keyframes slideInBottom {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Bounce animation for success messages */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+/* Apply animations to elements */
+body {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.btn-custom, .btn-get-started, .btn-auth {
+  transition: all 0.3s ease;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.btn-custom:hover, .btn-get-started:hover, .btn-auth:hover {
+  animation: buttonHover 0.5s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.glass-card {
+  animation: fadeIn 0.7s ease-out;
+}
+
+.expense-card {
+  animation: fadeIn 0.8s ease-out;
+  transition: transform 0.2s ease;
+}
+
+.expense-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-btn {
+  animation: pulse 2s infinite;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  animation: none;
+  transform: rotate(90deg) scale(1.1);
+}
+
+.modal-content {
+  animation: slideInRight 0.3s ease-out;
+}
+
+.alert-success {
+  animation: slideInBottom 0.5s ease-out, bounce 1s ease 0.5s;
+}
+
+.navbar {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.bottom-nav a {
+  transition: all 0.3s ease;
+}
+
+.bottom-nav a:hover {
+  transform: translateY(-3px);
+}
+
+.bottom-nav a.active {
+  animation: pulse 1.5s infinite;
+}
+
+/* Chart animations */
+canvas {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Form input animations */
+.form-control {
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(78, 115, 223, 0.5);
+}
+
+/* Logo animation on home page */
+.logo {
+  animation: fadeIn 1s ease-out, pulse 3s infinite 1s;
+}
+
+/* Back button animation */
+.back-btn {
+  transition: transform 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: translateX(-5px);
+}

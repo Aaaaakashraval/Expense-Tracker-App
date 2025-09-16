@@ -1,0 +1,188 @@
+    body {
+        background: #f8f9ff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 70px;
+        color: #333;
+    }
+
+    .navbar {
+        background: linear-gradient(to bottom, #77b5f9, #d4f0f9);
+        color: #1c7ee6;
+        padding: 15px;
+        text-align: center;
+        position: relative;
+    }
+
+    .navbar h5 {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .back-btn {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #1c7ee6;
+    }
+
+    .profile-container {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+    
+ .circle {
+        width: 40px;
+        height: 40px;
+        background: #eaeaea;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    .add-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding-bottom: 5px;
+        background: #6a11cb;
+        color: #fff;
+        font-size: 2rem;
+        border: none;
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-card {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .profile-header {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #6a11cb;
+        margin-bottom: 15px;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #2d2d7f;
+    }
+
+    .profile-email {
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    .edit-btn {
+        background: linear-gradient(90deg, #6a11cb, #2575fc);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #2d2d7f;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .detail-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        padding: 8px 0;
+    }
+
+    .detail-label {
+        color: #666;
+        font-weight: 500;
+    }
+
+    .detail-value {
+        color: #333;
+        font-weight: 600;
+    }
+
+    .financial-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .stat-card {
+        background: #f8f9ff;
+        border-radius: 12px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #6a11cb;
+        margin-bottom: 5px;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+        color: #666;
+    }
+
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        border-top: 1px solid #ddd;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .bottom-nav a {
+        text-decoration: none;
+        color: #444;
+        font-size: 0.9rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-nav a.active {
+        color: #2e76f3;
+        font-weight: bold;
+    }
+
+    .bottom-nav i {
+        font-size: 1.2rem;
+        margin-bottom: 3px;
+    }

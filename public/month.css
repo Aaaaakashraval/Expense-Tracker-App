@@ -1,0 +1,111 @@
+    body {
+        background: #f8f9ff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 70px;
+    }
+
+    .navbar {
+        background: linear-gradient(to bottom, #77b5f9, #d4f0f9);
+        color: #1c7ee6;
+        padding: 15px;
+        text-align: center;
+        position: relative;
+    }
+
+    .navbar h5 {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .back-btn {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #1c7ee6;
+    }
+
+    .chart-container {
+        background: #fff;
+        border-radius: 16px;
+        padding: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 15px;
+    }
+
+    .expense-card {
+        border-radius: 16px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        margin: 15px;
+        background: #fff;
+    }
+
+    .expense-name {
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .expense-amount {
+        color: green;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+        background: #eaeaea;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+     .add-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding-bottom: 5px;
+        background: #6a11cb;
+        color: #fff;
+        font-size: 2rem;
+        border: none;
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+    .bottom-nav a {
+      text-decoration: none;
+      color: #444;
+      font-size: 0.9rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .bottom-nav a.active {
+      color: #6a11cb;
+      font-weight: bold;
+    }
+    .bottom-nav i {
+      font-size: 1.2rem;
+      margin-bottom: 3px;
+    }
